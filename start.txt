@@ -1,4 +1,7 @@
-Accounting Settlement Assignment Scenarios (Including Sanction Delays)
+Accounting Settlement Assignment Scenarios
+
+
+Settlement Cycle 1 to Settlement Cycle 2 Boundary (Monday to Thursday)
 Scenario description
 Payment scheme settlement date and cycle
 Derived accounting settlement date and cycle (from payment)
@@ -27,6 +30,16 @@ Monday 02 February 2026, cycle 2
 Monday 02 February 2026, cycle 1
 Monday 02 February 2026, cycle 2
 Correct
+
+
+Settlement Cycle 2 to Settlement Cycle 3 Boundary (Monday to Thursday)
+Scenario description
+Payment scheme settlement date and cycle
+Derived accounting settlement date and cycle (from payment)
+Current accounting settlement date and cycle
+Latest USM 979 Complete accounting settlement date and cycle
+Assigned accounting settlement date and cycle
+Outcome
 Payment arrives during settlement cycle 2
 Tuesday 03 February 2026, cycle 2
 Tuesday 03 February 2026, cycle 2
@@ -48,6 +61,17 @@ Wednesday 04 February 2026, cycle 3
 Tuesday 03 February 2026, cycle 2
 Wednesday 04 February 2026, cycle 3
 Correct
+
+
+
+Settlement Cycle 3 to Settlement Cycle 1 Boundary (Monday to Thursday)
+Scenario description
+Payment scheme settlement date and cycle
+Derived accounting settlement date and cycle (from payment)
+Current accounting settlement date and cycle
+Latest USM 979 Complete accounting settlement date and cycle
+Assigned accounting settlement date and cycle
+Outcome
 Payment from settlement cycle 3 arrives just after 7:00 AM but before USM Complete
 Monday 02 February 2026, cycle 3
 Tuesday 03 February 2026, cycle 3
@@ -62,6 +86,17 @@ Tuesday 03 February 2026, cycle 1
 Tuesday 03 February 2026, cycle 3
 Tuesday 03 February 2026, cycle 1
 Correct
+
+
+
+Friday Settlement Cycle 3 to Monday Settlement Cycle 1 Boundary
+Scenario description
+Payment scheme settlement date and cycle
+Derived accounting settlement date and cycle (from payment)
+Current accounting settlement date and cycle
+Latest USM 979 Complete accounting settlement date and cycle
+Assigned accounting settlement date and cycle
+Outcome
 Friday settlement cycle 3 payment received during weekend window
 Friday 06 February 2026, cycle 3
 Monday 09 February 2026, cycle 3
@@ -69,6 +104,9 @@ Monday 09 February 2026, cycle 3
 Friday 06 February 2026, cycle 2
 Monday 09 February 2026, cycle 3
 Correct
+
+
+
 Friday settlement cycle 3 payment received Monday morning before USM Complete
 Friday 06 February 2026, cycle 3
 Monday 09 February 2026, cycle 3
@@ -76,6 +114,9 @@ Monday 09 February 2026, cycle 1
 Friday 06 February 2026, cycle 2
 Monday 09 February 2026, cycle 3
 Correct
+
+
+
 Friday settlement cycle 3 payment received after USM Complete
 Friday 06 February 2026, cycle 3
 Monday 09 February 2026, cycle 3
@@ -83,6 +124,17 @@ Monday 09 February 2026, cycle 1
 Monday 09 February 2026, cycle 3
 Monday 09 February 2026, cycle 1
 Correct
+
+
+Long Delay Due to Sanction Checks
+Scenario description
+Payment scheme settlement date and cycle
+Derived accounting settlement date and cycle (from payment)
+Current accounting settlement date and cycle
+Latest USM 979 Complete accounting settlement date and cycle
+Assigned accounting settlement date and cycle
+Outcome
+
 Payment delayed two days due to sanction checks
 Tuesday 03 February 2026, cycle 2
 Tuesday 03 February 2026, cycle 2
@@ -90,6 +142,7 @@ Thursday 05 February 2026, cycle 1
 Wednesday 04 February 2026, cycle 3
 Thursday 05 February 2026, cycle 1
 Correct
+
 Payment delayed three days from settlement cycle 3 due to sanction checks
 Monday 02 February 2026, cycle 3
 Tuesday 03 February 2026, cycle 3
@@ -97,6 +150,7 @@ Thursday 05 February 2026, cycle 2
 Wednesday 04 February 2026, cycle 3
 Thursday 05 February 2026, cycle 2
 Correct
+
 Payment delayed across weekend due to sanction checks
 Friday 06 February 2026, cycle 3
 Monday 09 February 2026, cycle 3
@@ -104,6 +158,7 @@ Wednesday 11 February 2026, cycle 1
 Monday 09 February 2026, cycle 3
 Wednesday 11 February 2026, cycle 1
 Correct
+
 Payment delayed multiple weeks due to sanction investigation
 Monday 02 February 2026, cycle 1
 Monday 02 February 2026, cycle 1
